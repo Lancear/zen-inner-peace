@@ -1,0 +1,143 @@
+#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
+  --personal-toolbar-height: 0px;
+}
+
+#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
+  --personal-toolbar-height: 28px;
+}
+
+/* increase toolbar padding x in collapsed mode */
+:root:not([zen-sidebar-expanded]) {
+  --zen-toolbox-padding: 5px !important;
+}
+
+/* navbar padding y | todo: disable for single toolbar */
+:root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* window buttons padding right */
+.titlebar-buttonbox-container {
+  padding-right: 4px;
+}
+
+/* macos inspired window buttons */
+/* .titlebar-buttonbox {
+  padding-right: 12px;
+  
+  display: flex !important;
+  align-items: center;
+  gap: 6px;
+} */
+
+/* macos inspired window buttons */
+/* .titlebar-button {
+  padding: 0 !important;
+  
+  height: 14px;
+  width: 14px;
+  
+  border-radius: 100%;
+  background: #aaaaaa !important;
+} */
+
+/* macos inspired window buttons */
+/* .titlebar-min:hover {
+  background: #1aab29 !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-restore:hover {
+  background: #ffbd2e !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-close:hover {
+  background: #e0443e !important;
+}
+ */
+/* macos inspired window buttons */
+/* .titlebar-button .toolbarbutton-icon {
+  display: none !important;
+} */
+
+/* bookmarkbar right align with browser content | todo: disable in collapsed */
+#PersonalToolbar {
+  padding-inline-end: 0px !important;
+}
+
+/* increase padding between browser content and right toolbar | todo: only when tabs right */
+#zen-tabbox-wrapper {
+  padding-right: 2px;
+}
+
+/* increase toolbar padding top to align below bookmarkbar */
+:root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+  padding-top: calc(8px + var(--personal-toolbar-height)) !important;
+}
+
+:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+  margin-bottom: calc(4px + var(--personal-toolbar-height)) !important;
+}
+
+/* disable container info in url bar */
+#userContext-icons {
+  display: none;
+}
+
+/* show all find options in typeahead quick find */
+.findbar-container > [hidden] {
+  display: flex !important;
+}
+
+/* center url in urlbar when not expanded */
+#urlbar-input:not([aria-expanded="true"]) {
+  text-align: center !important;
+}
+
+/* hide pinned tab reset button */
+.tab-reset-button {
+  display: none !important;
+}
+
+/* compact mode tab close button in style of mute button */
+/* :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+  display: inline-flex !important;
+  
+  width: 0.1px !important;
+  height: 0.1px !important;
+  padding: 0.02px !important;
+  transform: scale(140);
+  
+  position: relative;
+  top: -9px;
+  left: -2.5px;
+  
+  color: #ffffff !important;
+  background: #000000;
+  margin-inline: 0 !important;
+} */
+
+/* compact mode tab close button hover background override */
+/* :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button:hover {
+  background: #000000 !important;
+} */
+
+/* scale down the mute button by 2px */
+.tab-icon-overlay {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* remove workspace button from toolbar */
+/* #zen-workspaces-button {
+  display: none !important;
+} */
+
+/*
+Interesting advanced settings:
+- zen.view.sidebar-collapsed.hide-mute-button => false
+- browser.tabs.allow_transparent_browser => false
+- zen.workspaces.show-workspace-indicator => false
+*/
