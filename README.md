@@ -1,6 +1,6 @@
 # Lancear's Inner Peace [Zen Mod]
 Easily unify, hide, and tweak the most common features in Zen.<br>
-Fully customizable · See GitHub for details
+· Fully customizable · See GitHub for details ·
 
 ![Thumbnail](./thumbnail.png)
 
