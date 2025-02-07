@@ -11,17 +11,22 @@ Interesting advanced settings:
 /* ----- Typeahead Find ----- */
 
 /* Open full find with all options */
-.findbar-container > checkbox[hidden] {
-  display: flex !important;
+@media (-moz-bool-pref: "lancear.inner-peace.typeahead-find.show-full-find") {
+  .findbar-container > checkbox[hidden] {
+    display: flex !important;
+  }
 }
+
 
 
 
 /* ----- Urlbar ----- */
 
 /* Center url in (non floating) urlbar */
-#urlbar-input:not([aria-expanded="true"]) {
-  text-align: center !important;
+@media (-moz-bool-pref: "lancear.inner-peace.urlbar.center-url") {
+  #urlbar-input:not([aria-expanded="true"]) {
+    text-align: center !important;
+  }
 }
 
 
@@ -29,15 +34,19 @@ Interesting advanced settings:
 /* ----- Mute Tab Button ----- */
 
 /* Resize */
-.tab-icon-overlay {
-  width: 14px !important;
-  height: 14px !important;
+@media (-moz-bool-pref: "lancear.inner-peace.mute-tab-button.resize") {
+  .tab-icon-overlay {
+    width: var(--lancear-inner-peace-mute-tab-button-size) !important;
+    height: var(--lancear-inner-peace-mute-tab-button-size) !important;
+  }
 }
 
 /* Reposition */
-.tab-icon-overlay {
-  top: -8px !important;
-  right: -6px !important;
+@media (-moz-bool-pref: "lancear.inner-peace.mute-tab-button.reposition") {
+  .tab-icon-overlay {
+    top: var(--lancear-inner-peace-mute-tab-button-top) !important;
+    right: var(--lancear-inner-peace-mute-tab-button-right) !important;
+  }
 }
 
 
@@ -45,35 +54,41 @@ Interesting advanced settings:
 /* ----- Close Tab Button ----- */
 
 /* Close tab button in the style of the mute button */
-:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
-  display: inline-flex !important;
-  
-  width: 0.1px !important;
-  height: 0.1px !important;
-  padding: 0.02px !important;
-  transform: scale(140);
-  
-  position: relative;
-  top: -9px;
-  right: 2.5px;
-  
-  background: #ffffff;
-  margin-inline: 0 !important;
-}
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.show") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    display: inline-flex !important;
 
-:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button:hover {
-  background: #ffffff !important;
+    width: 0.1px !important;
+    height: 0.1px !important;
+    padding: 0.02px !important;
+    transform: scale(140);
+
+    position: relative;
+    top: -9px;
+    right: 2.5px;
+
+    background: #ffffff;
+    margin-inline: 0 !important;
+  }
+  
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button:hover {
+    background: #ffffff !important;
+  }
 }
 
 /* Rescale */
-:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
-  transform: scale(140);
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.resize") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    transform: scale(var(--lancear-inner-peace-close-tab-button-size));
+  }
 }
 
 /* Reposition */
-:root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
-  top: -9px;
-  right: 2.5px;
+@media (-moz-bool-pref: "lancear.inner-peace.close-tab-button.reposition") {
+  :root:not([zen-sidebar-expanded]) tab:hover .tab-close-button {
+    top: var(--lancear-inner-peace-close-tab-button-top);
+    right: var(--lancear-inner-peace-close-tab-button-right);
+  }
 }
 
 
@@ -81,66 +96,88 @@ Interesting advanced settings:
 /* ----- Clean up spacing ----- */
 
 /* Add vertical spacing around the toolbar */
-:root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
-  padding-top: 4px;
-  padding-bottom: 4px;
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing") {
+  :root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
 }
+
 
 /* Horizontally align the toolbar */
-:root:not([zen-sidebar-expanded]) #nav-bar {
-  margin-left: 0 !important;
-}
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.horizontal-toolbar-alignment") {
+  :root:not([zen-sidebar-expanded]) #nav-bar {
+    margin-left: 0 !important;
+  }
 
-:root:not([zen-sidebar-expanded]) #PersonalToolbar,
-:root:not([zen-right-side="true"]) #PersonalToolbar {
-  padding-inline-start: 0px !important;
-}
+  :root:not([zen-sidebar-expanded]) #PersonalToolbar,
+  :root:not([zen-right-side="true"]) #PersonalToolbar {
+    padding-inline-start: 0px !important;
+  }
 
-:root:not([zen-compact-mode="true"]) #PersonalToolbar {
-  padding-inline-end: 0px !important;
-}
+  :root:not([zen-compact-mode="true"]) #PersonalToolbar {
+    padding-inline-end: 0px !important;
+  }
 
-#nav-bar #PanelUI-button:last-of-type toolbarbutton {
-  padding-right: 0 !important;
-}
+  #nav-bar #PanelUI-button:last-of-type toolbarbutton {
+    padding-right: 0 !important;
+  }
 
-#nav-bar #nav-bar-overflow-button {
-  padding-right: 0px !important;  
+  #nav-bar #nav-bar-overflow-button {
+    padding-right: 0px !important;  
+  }
 }
 
 /* Add horizontal spacing around the sidebar */
-:root:not([zen-sidebar-expanded]) {
-  --zen-toolbox-padding: 5px !important;
-}
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing") {
+  :root:not([zen-sidebar-expanded]) {
+    --zen-toolbox-padding: 5px !important;
+  }
 
-:root[zen-right-side="true"] #zen-tabbox-wrapper {
-  padding-right: 2px;
-}
+  :root[zen-right-side="true"] #zen-tabbox-wrapper {
+    padding-right: 2px;
+  }
 
-:root:not([zen-right-side="true"]) #zen-tabbox-wrapper {
-  padding-left: 2px;
+  :root:not([zen-right-side="true"]) #zen-tabbox-wrapper {
+    padding-left: 2px;
+  }
 }
 
 /* Vertically align the sidebar */
-#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
-  --personal-toolbar-height: 0px;
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-sidebar-alignment") {
+  #zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
+    --personal-toolbar-height: 0px;
+  }
+
+  #zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
+    --personal-toolbar-height: var(--lancear-inner-peace-clean-up-spacing-personal-toolbar-height);
+  }
+
+  :root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+    padding-top: var(--personal-toolbar-height) !important;
+  }
+
+  :root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+    margin-bottom: var(--personal-toolbar-height) !important;
+  }
+  
+  @media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing") {
+    :root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
+      padding-top: calc(8px + var(--personal-toolbar-height)) !important;
+    }
+
+    :root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
+      margin-bottom: calc(4px + var(--personal-toolbar-height)) !important;
+    }
+  }
 }
 
-#zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
-  --personal-toolbar-height: 28px;
-}
-
-:root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
-  padding-top: calc(8px + var(--personal-toolbar-height)) !important;
-}
-
-:root:not([zen-single-toolbar])[zen-sidebar-expanded] #zen-sidebar-top-buttons {
-  margin-bottom: calc(4px + var(--personal-toolbar-height)) !important;
-}
 
 /* Add small spacing on the right of the window buttons */
-.titlebar-buttonbox-container {
-  padding-right: 4px;
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.right-window-buttons-spacing") {
+  .titlebar-buttonbox-container {
+    padding-right: 4px;
+  }
 }
 
 
