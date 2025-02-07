@@ -135,5 +135,132 @@
     "property": "lancear.inner-peace.clean-up-spacing.right-window-buttons-spacing",
     "label": "Add small spacing on the right of the window buttons",
     "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything",
+    "label": "· Hide Anything ·",
+    "type": "checkbox",
+    "defaultValue": true,
+    "disabledOn": ["windows", "linux", "macos"]
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.back-button",
+    "label": "Hide back button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.forward-button",
+    "label": "Hide forward button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.forward-button",
+    "label": "Hide forward button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.url-identity-box",
+    "label": "Hide url identity box",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tracking-protection-icon",
+    "label": "Hide tracking protection icon",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.feature-recommendation",
+    "label": "Hide feature recommendation",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.container-info",
+    "label": "Hide container info fully",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.container-label",
+    "label": "Hide container label",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.container-icon",
+    "label": "Hide container icon",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.reader-mode-button",
+    "label": "Hide reader mode button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.picture-in-picture-button",
+    "label": "Hide picture in picture button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.translations-button",
+    "label": "Hide translations button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.shopping-button",
+    "label": "Hide shopping button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.zoom-button",
+    "label": "Hide zoom button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.page-action-button",
+    "label": "Hide page action button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.split-views-button",
+    "label": "Hide split views button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.bookmark-button",
+    "label": "Hide bookmark button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.extensions-button,
+    "label": "Hide extensions button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.menu-button,
+    "label": "Hide menu button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.window-min-button,
+    "label": "Hide window minimize button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.window-restore-button,
+    "label": "Hide window restore button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.window-close-button,
+    "label": "Hide window close button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.workspace-switcher,
+    "label": "Hide workspace switcher",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-reset-button,
+    "label": "Hide tab reset button",
+    "type": "checkbox"
   }
 ]
