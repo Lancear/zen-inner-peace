@@ -47,13 +47,13 @@
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.mute-tab-button.resize",
+    "property": "lancear.inner-peace.mute-tab-button.top",
     "label": "Top",
     "type": "string",
     "defaultValue": "-8px"
   },
   {
-    "property": "lancear.inner-peace.mute-tab-button.resize",
+    "property": "lancear.inner-peace.mute-tab-button.right",
     "label": "Right",
     "type": "string",
     "defaultValue": "-6px"
@@ -77,7 +77,7 @@
   },
   {
     "property": "lancear.inner-peace.close-tab-button.size",
-    "label": "Size (px * 10 without 'px' suffix)",
+    "label": "Size (px * 10, no px suffix | default 140 = 14px)",
     "type": "string",
     "defaultValue": "140"
   },
@@ -87,13 +87,13 @@
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.close-tab-button.resize",
+    "property": "lancear.inner-peace.close-tab-button.top",
     "label": "Top",
     "type": "string",
     "defaultValue": "-9px"
   },
   {
-    "property": "lancear.inner-peace.close-tab-button.resize",
+    "property": "lancear.inner-peace.close-tab-button.right",
     "label": "Right",
     "type": "string",
     "defaultValue": "2.5px"
@@ -126,7 +126,7 @@
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing",
+    "property": "lancear.inner-peace.clean-up-spacing.personal-toolbar-height",
     "label": "Personal / Bookmarks toolbar height",
     "type": "string",
     "defaultValue": "28px"
