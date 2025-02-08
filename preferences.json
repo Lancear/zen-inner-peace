@@ -229,38 +229,73 @@
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.extensions-button,
+    "property": "lancear.inner-peace.hide-anything.extensions-button",
     "label": "Hide extensions button",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.menu-button,
+    "property": "lancear.inner-peace.hide-anything.menu-button",
     "label": "Hide menu button",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.window-min-button,
+    "property": "lancear.inner-peace.hide-anything.window-min-button",
     "label": "Hide window minimize button",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.window-restore-button,
+    "property": "lancear.inner-peace.hide-anything.window-restore-button",
     "label": "Hide window restore button",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.window-close-button,
+    "property": "lancear.inner-peace.hide-anything.window-close-button",
     "label": "Hide window close button",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.workspace-switcher,
+    "property": "lancear.inner-peace.hide-anything.workspace-switcher",
     "label": "Hide workspace switcher",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.tab-reset-button,
+    "property": "lancear.inner-peace.hide-anything.tab-reset-button",
     "label": "Hide tab reset button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-close-button",
+    "label": "Hide tab close button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-icon",
+    "label": "Hide tab icon fully",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-sharing-icon",
+    "label": "Hide tab sharing icon",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-mute-button",
+    "label": "Hide tab mute button",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-pending-icon",
+    "label": "Hide tab pending icon",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-throbber",
+    "label": "Hide tab throbber",
+    "type": "checkbox"
+  },
+  {
+    "property": "lancear.inner-peace.hide-anything.tab-title-changed-indicator",
+    "label": "Hide tab title changed indicator",
     "type": "checkbox"
   }
 ]
