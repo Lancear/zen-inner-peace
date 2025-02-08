@@ -169,10 +169,10 @@ Interesting advanced settings:
 
 
 
-/* ----- Clean up spacing ----- */
+/* ----- Clean up layout ----- */
 
 /* Add vertical spacing around the toolbar */
-@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing") {
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-toolbar-spacing") {
   :root:not([zen-single-toolbar]) #zen-appcontent-navbar-container {
     padding-top: 4px;
     padding-bottom: 4px;
@@ -181,7 +181,7 @@ Interesting advanced settings:
 
 
 /* Horizontally align the toolbar */
-@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.horizontal-toolbar-alignment") {
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.horizontal-toolbar-alignment") {
   :root:not([zen-sidebar-expanded]) #nav-bar {
     margin-left: 0 !important;
   }
@@ -205,7 +205,7 @@ Interesting advanced settings:
 }
 
 /* Add horizontal spacing around the sidebar */
-@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing") {
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.horizontal-sidebar-spacing") {
   :root:not([zen-sidebar-expanded]) {
     --zen-toolbox-padding: 5px !important;
   }
@@ -220,13 +220,13 @@ Interesting advanced settings:
 }
 
 /* Vertically align the sidebar */
-@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-sidebar-alignment") {
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-sidebar-alignment") {
   #zen-main-app-wrapper:has(#PersonalToolbar[collapsed="true"]) {
     --personal-toolbar-height: 0px;
   }
 
   #zen-main-app-wrapper:has(#PersonalToolbar[collapsed="false"]) {
-    --personal-toolbar-height: var(--lancear-inner-peace-clean-up-spacing-personal-toolbar-height);
+    --personal-toolbar-height: var(--lancear-inner-peace-clean-up-layout-personal-toolbar-height);
   }
 
   :root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
@@ -237,7 +237,7 @@ Interesting advanced settings:
     margin-bottom: var(--personal-toolbar-height) !important;
   }
   
-  @media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing") {
+  @media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.vertical-toolbar-spacing") {
     :root:not([zen-single-toolbar]):not([zen-sidebar-expanded]) #navigator-toolbox {
       padding-top: calc(8px + var(--personal-toolbar-height)) !important;
     }
@@ -250,7 +250,7 @@ Interesting advanced settings:
 
 
 /* Unify the window buttons styling across all layouts */
-@media (-moz-bool-pref: "lancear.inner-peace.clean-up-spacing.unify-window-buttons-styling") {
+@media (-moz-bool-pref: "lancear.inner-peace.clean-up-layout.unify-window-buttons-styling") {
   :root[zen-right-side="true"]:not([zen-sidebar-expanded]) .titlebar-buttonbox-container {
     padding-right: 5px;
   }
