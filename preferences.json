@@ -99,6 +99,18 @@
     "defaultValue": "2.5px"
   },
   {
+    "property": "lancear.inner-peace.split-tabs",
+    "label": "· Split Tabs ·",
+    "type": "checkbox",
+    "defaultValue": true,
+    "disabledOn": ["windows", "linux", "macos"]
+  },
+  {
+    "property": "lancear.inner-peace.split-tabs.highlight-all-open",
+    "label": "Highlight all open split tabs (unfortunately stops working after an accumulated amount of 64 tabs have been created in a session)",
+    "type": "checkbox"
+  },
+  {
     "property": "lancear.inner-peace.clean-up-spacing",
     "label": "· Clean Up Spacing ·",
     "type": "checkbox",
@@ -132,8 +144,8 @@
     "defaultValue": "28px"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.right-window-buttons-spacing",
-    "label": "Add small spacing on the right of the window buttons",
+    "property": "lancear.inner-peace.clean-up-spacing.unify-window-buttons-styling",
+    "label": "Unify the window buttons styling across all layouts",
     "type": "checkbox"
   },
   {
