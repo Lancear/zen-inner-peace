@@ -3,6 +3,8 @@ Easily unify, hide, and tweak the most common features in Zen.<br>
 · Fully customizable · See GitHub for details ·
 
 ![Thumbnail](./thumbnail.png)
+![My current setup](https://github.com/user-attachments/assets/e9cc7e69-d69f-48e3-80eb-4a0b34ffe816)
+
 
 ## Feature Areas
 All features are opt in and configurable. Each bullet point for a feature represents a setting that can be enabled.
