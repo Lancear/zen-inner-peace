@@ -111,40 +111,40 @@
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing",
-    "label": "· Clean Up Spacing ·",
+    "property": "lancear.inner-peace.clean-up-layout",
+    "label": "· Clean Up Layout ·",
     "type": "checkbox",
     "defaultValue": true,
     "disabledOn": ["windows", "linux", "macos"]
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.vertical-toolbar-spacing",
+    "property": "lancear.inner-peace.clean-up-layout.vertical-toolbar-spacing",
     "label": "Add vertical spacing around the toolbar",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.horizontal-toolbar-alignment",
+    "property": "lancear.inner-peace.clean-up-layout.horizontal-toolbar-alignment",
     "label": "Horizontally align the toolbar",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.horizontal-sidebar-spacing",
+    "property": "lancear.inner-peace.clean-up-layout.horizontal-sidebar-spacing",
     "label": "Add horizontal spacing around the sidebar",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.vertical-sidebar-alignment",
+    "property": "lancear.inner-peace.clean-up-layout.vertical-sidebar-alignment",
     "label": "Vertically align the sidebar",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.personal-toolbar-height",
+    "property": "lancear.inner-peace.clean-up-layout.personal-toolbar-height",
     "label": "Personal / Bookmarks toolbar height",
     "type": "string",
     "defaultValue": "28px"
   },
   {
-    "property": "lancear.inner-peace.clean-up-spacing.unify-window-buttons-styling",
+    "property": "lancear.inner-peace.clean-up-layout.unify-window-buttons-styling",
     "label": "Unify the window buttons styling across all layouts",
     "type": "checkbox"
   },
