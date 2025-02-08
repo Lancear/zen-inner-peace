@@ -274,13 +274,18 @@
     "type": "checkbox"
   },
   {
+    "property": "lancear.inner-peace.hide-anything.tab-mute-button",
+    "label": "Hide tab mute button",
+    "type": "checkbox"
+  },
+  {
     "property": "lancear.inner-peace.hide-anything.tab-sharing-icon",
     "label": "Hide tab sharing icon",
     "type": "checkbox"
   },
   {
-    "property": "lancear.inner-peace.hide-anything.tab-mute-button",
-    "label": "Hide tab mute button",
+    "property": "lancear.inner-peace.hide-anything.tab-title-changed-indicator",
+    "label": "Hide tab title changed indicator",
     "type": "checkbox"
   },
   {
@@ -291,11 +296,6 @@
   {
     "property": "lancear.inner-peace.hide-anything.tab-throbber",
     "label": "Hide tab throbber",
-    "type": "checkbox"
-  },
-  {
-    "property": "lancear.inner-peace.hide-anything.tab-title-changed-indicator",
-    "label": "Hide tab title changed indicator",
     "type": "checkbox"
   }
 ]
