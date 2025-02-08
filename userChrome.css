@@ -109,7 +109,7 @@ Interesting advanced settings:
   :root:not([zen-sidebar-expanded]) #nav-bar {
     margin-left: 0 !important;
   }
-
+  
   :root:not([zen-sidebar-expanded]) #PersonalToolbar,
   :root:not([zen-right-side="true"]) #PersonalToolbar {
     padding-inline-start: 0px !important;
@@ -184,142 +184,226 @@ Interesting advanced settings:
 
 /* ----- Hide Anything ----- */
 
-/* 
-#back-button {
-  display: none;
+/* Hide back button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.back-button") { 
+  #back-button {
+    display: none;
+  }
 }
 
-#forward-button {
-  display: none;
+/* Hide forward button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.forward-button") { 
+  #forward-button {
+    display: none;
+  }
 }
 
-#identity-box {
-  display: none;
+/* Hide url identity box */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.url-identity-box") { 
+  #identity-box {
+    display: none;
+  }
+  
+  .urlbar-input-box {
+    padding-left: 6px;
+  }
 }
 
-.urlbar-input-box {
-  padding-left: 6px;
+/* Hide tracking protection icon */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tracking-protection-icon") { 
+  #tracking-protection-icon-container {
+    display: none;
+  }
 }
 
-#nav-bar {
-  margin-left: 0 !important;;
+/* Hide feature recommendation */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.feature-recommendation") { 
+  #contextual-feature-recommendation {
+    display: none;
+  }
 }
 
-#tracking-protection-icon-container {
-  display: none;
+/* Hide container info fully */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-info") { 
+  #userContext-icons {
+    display: none;
+  }
 }
 
-#unified-extensions-button {
-  display: none;
+/* Hide container label */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-label") { 
+  #userContext-label {
+    display: none;
+  }
 }
 
-#PanelUI-menu-button {
-  display: none;
+/* Hide container icon */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.container-icon") { 
+  #userContext-indicator {
+    display: none;
+  }
 }
 
-.titlebar-min {
-  display: none;
+/* Hide reader mode button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.reader-mode-button") { 
+  #reader-mode-button {
+    display: none;
+  }
 }
 
-.titlebar-restore {
-  display: none;
+/* Hide pciture in picture button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.picture-in-picture-button") { 
+  #picture-in-picture-button {
+    display: none;
+  }
 }
 
-.titlebar-close {
-  display: none;
+/* Hide translations button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.translations-button") { 
+  #translations-button {
+    display: none;
+  }
 }
 
-#contextual-feature-recommendation {
-  display: none;
+/* Hide shopping button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.shopping-button") { 
+  #shopping-sidebar-button {
+    display: none;
+  }
 }
 
-#userContext-label {
-  display: none;
+/* Hide zoom button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.zoom-button") { 
+  #urlbar-zoom-button {
+    display: none;
+  }
 }
 
-#userContext-indicator {
-  display: none;
-}
- */
-#userContext-icons {
-  display: none;
-}
-/* 
-#reader-mode-button {
-  display: none;
+/* Hide page action button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.page-action-button") { 
+  #pageActionButton {
+    display: none;
+  }
 }
 
-#picture-in-picture-button {
-  display: none;
+/* Hide split views button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.split-views-button") { 
+  #zen-split-views-button {
+    display: none;
+  }
 }
 
-#translations-button {
-  display: none;
+/* Hide bookmark button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.bookmark-button") { 
+  #star-button-box {
+    display: none;
+  }
 }
 
-#shopping-sidebar-button {
-  display: none;
+/* Hide extensions button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.extensions-button") { 
+  #unified-extensions-button {
+    display: none;
+  }
 }
 
-#urlbar-zoom-button {
-  display: none;
+/* Hide menu button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.menu-button") { 
+  #PanelUI-menu-button {
+    display: none;
+  }
 }
 
-#pageActionButton {
-  display: none;
+/* Hide window minimize button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-min-button") { 
+  .titlebar-min {
+    display: none;
+  }
 }
 
-#zen-split-views-button {
-  display: none;
+/* Hide window restore button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-restore-button") { 
+  .titlebar-restore {
+    display: none;
+  }
 }
 
-#star-button-box {
-  display: none;
-} */
-
-/* remove workspace button from toolbar */
-/* #zen-workspaces-button {
-  display: none !important;
-} */
-
-
-/* hide pinned tab reset button */
-/* .tab-reset-button {
-  display: none !important;
-} */
-
-/* hide close tab button */
-/* .tab-close-button {
-  display: none !important;
-} */
-
-.tab-icon-pending {
-/*   display: none !important; */
+/* Hide window close button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.window-close-button") { 
+  .titlebar-close {
+    display: none;
+  }
 }
 
-.tab-throbber {
-/*   display: none !important; */
+/* Hide workspace switcher */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.workspace-switcher") { 
+  #zen-workspaces-button {
+    display: none !important;
+  }
 }
 
-.tab-icon-image[sharing] {
-/*   animation: none !important; */
+/* Hide tab reset button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-reset-button") { 
+  .tab-reset-button {
+    display: none !important;
+  }
 }
 
-.tab-sharing-icon-overlay {
-/*   display: none !important; */
+/* Hide tab close button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-close-button") { 
+  .tab-close-button {
+    display: none !important;
+  }
 }
 
-.tab-icon-overlay {
-/*   display: none !important; */
+/* Hide tab icon fully */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-icon") { 
+  .tab-icon-stack {
+    display: none !important;
+  }
+    
+  .tab-content {
+    padding-left: 10px !important;
+  }  
 }
 
-.tab-icon-stack {
-/*   display: none !important; */
+/* Hide tab mute button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-mute-button") { 
+  .tab-icon-overlay {
+    display: none !important;
+  }
 }
 
-.tab-content {
-/*   background: none !important; */
-/*   padding-left: 10px !important; */
+/* Hide tab sharing icon button */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-sharing-icon") { 
+  .tab-sharing-icon-overlay {
+    display: none !important;
+  }
+  
+  .tab-icon-image[sharing] {
+    animation: none !important;
+  }
+}
+
+/* Hide tab title changed indicator */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-title-changed-indicator") { 
+  .tab-content {
+    background: none !important;
+  }
+}
+
+/* Hide tab pending icon*/
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-pending-icon") { 
+  .tab-icon-pending {
+    display: none !important;
+  }
+}
+
+/* Hide tab throbber */
+@media (-moz-bool-pref: "lancear.inner-peace.hide-anything.tab-throbber") { 
+  .tab-throbber {
+    display: none !important;
+  }
 }
 
 
