@@ -60,7 +60,7 @@
   },
   {
     "property": "lancear.inner-peace.close-tab-button",
-    "label": "· Mute Tab Button ·",
+    "label": "· Close Tab Button ·",
     "type": "checkbox",
     "defaultValue": true,
     "disabledOn": ["windows", "linux", "macos"]
